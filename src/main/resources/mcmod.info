@@ -1,8 +1,8 @@
 [
 {
-  "modid": "tardim",
-  "name": "TARDIM",
-  "description": "Time And Relative Dimensions In Minecraft.",
+  "modid": "realdrops",
+  "name": "Realistic Drops",
+  "description": "Craft mob drops on peaceful difficulty!",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
