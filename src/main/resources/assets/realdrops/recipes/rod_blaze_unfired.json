@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "minecraft:gunpowder"
+        },
+		{
+            "item": "minecraft:gunpowder"
+        },
+		{
+            "type": "forge:ore_dict",
+            "ore": "ingotGold"
+        }
+    ],
+    "result":
+    {
+        "item": "realdrops:rod_blaze_unfired",
+        "count": 1
+    }
+}

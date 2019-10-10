@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "minecraft:magma_cream"
+        },
+		{
+			"type": "minecraft:item_nbt",
+			"item": "minecraft:potion",
+			"nbt": {
+				"Potion": "minecraft:water"
+			}
+		}
+    ],
+    "result":
+    {
+        "item": "minecraft:slime_ball",
+        "count": 1
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "minecraft:lava_bucket"
+        },
+		{
+            "item": "minecraft:diamond"
+        }
+    ],
+    "result":
+    {
+        "item": "minecraft:ender_pearl",
+        "count": 1
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "minecraft:skull",
+			"data": 2
+        },
+		{
+			"item": "minecraft:gunpowder"
+		}
+    ],
+    "result":
+    {
+        "item": "minecraft:skull",
+        "data": 4,
+		"count": 1
+    }
+}

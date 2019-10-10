@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "minecraft:gunpowder"
+        },
+		{
+            "item": "minecraft:sand",
+            "data": 32767
+        }
+    ],
+    "result":
+    {
+        "item": "minecraft:soul_sand",
+        "count": 1
+    }
+}
