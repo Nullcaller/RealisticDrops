@@ -9,6 +9,7 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -37,6 +38,13 @@ public class EventSubscriber {
 
 		registry.register(ItemRodBlazeUnfired.instance);
 		OreDictionary.registerOre("rodBlazeUnfired", ItemRodBlazeUnfired.instance);
+	}
+	
+	@SubscribeEvent
+	public static void registerModels(ModelRegistryEvent event) {
+		ItemRodBlazeUnfired.instance.addModel();
+		ItemDustSulfur.instance.addModel();
+		ItemDustSaltpeter.instance.addModel();
 	}
 	
     @SubscribeEvent
