@@ -3,14 +3,16 @@
     "ingredients":
     [
         {
-            "item": "minecraft:gunpowder"
+            "type": "forge:ore_dict",
+            "ore": "dustSulfur"
         },
 		{
             "type": "forge:ore_dict",
             "ore": "ingotGold"
         },
 		{
-            "item": "minecraft:gunpowder"
+            "type": "forge:ore_dict",
+            "ore": "dustSulfur"
         }
     ],
     "result":
