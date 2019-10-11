@@ -33,6 +33,7 @@ public class RealDrops {
 		public static _silver silver = new _silver();
 		public static _saltpeter saltpeter = new _saltpeter();
 		public static _sulfur sulfur = new _sulfur();
+		public static _quartz quartz = new _quartz();
 		
 		
 		public static class _silver {
@@ -50,6 +51,23 @@ public class RealDrops {
 
 			@Name("Maximum Spawn Height")
 			public int maxHeight = 40;
+		}
+		
+		public static class _quartz {
+			@Name("Enable")
+			public boolean enable = true;
+			
+			@Name("Block Amount")
+			public int blockAmount = 6;
+
+			@Name("Chances to Spawn")
+			public int chancesToSpawn = 6;
+
+			@Name("Minimum Spawn Height")
+			public int minHeight = 10;
+
+			@Name("Maximum Spawn Height")
+			public int maxHeight = 30;
 		}
 			
 		public static class _saltpeter {
