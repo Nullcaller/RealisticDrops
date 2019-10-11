@@ -56,9 +56,17 @@ public class EventSubscriber {
 		OreDictionary.registerOre("nuggetSilver", ItemSilverNugget.instance);
 		
 		registry.register(BlockSaltpeterOre.itemBlock);
+		OreDictionary.registerOre("oreSaltpeter", BlockSaltpeterOre.itemBlock);
+		
 		registry.register(BlockSulfurSand.itemBlock);
+		OreDictionary.registerOre("oreSulfur", BlockSulfurSand.itemBlock);
+		OreDictionary.registerOre("sandSulfur", BlockSulfurSand.itemBlock);
+		
 		registry.register(BlockSilverOre.itemBlock);
+		OreDictionary.registerOre("oreSilver", BlockSilverOre.itemBlock);
+		
 		registry.register(BlockSilver.itemBlock);
+		OreDictionary.registerOre("blockSilver", BlockSilver.itemBlock);
 	}
 	
 	@SubscribeEvent
@@ -66,17 +74,12 @@ public class EventSubscriber {
 		IForgeRegistry<Block> registry = event.getRegistry();
 		
 		registry.register(BlockSaltpeterOre.instance);
-		OreDictionary.registerOre("oreSaltpeter", BlockSaltpeterOre.instance);
 		
 		registry.register(BlockSulfurSand.instance);
-		OreDictionary.registerOre("oreSulfur", BlockSulfurSand.instance);
-		OreDictionary.registerOre("sandSulfur", BlockSulfurSand.instance);
 		
 		registry.register(BlockSilverOre.instance);
-		OreDictionary.registerOre("oreSilver", BlockSilverOre.instance);
 		
 		registry.register(BlockSilver.instance);
-		OreDictionary.registerOre("blockSilver", BlockSilver.instance);
 	}
 	
 	@SubscribeEvent
