@@ -6,11 +6,11 @@
             "item": "minecraft:gunpowder"
         },
 		{
-            "item": "minecraft:gunpowder"
-        },
-		{
             "type": "forge:ore_dict",
             "ore": "ingotGold"
+        },
+		{
+            "item": "minecraft:gunpowder"
         }
     ],
     "result":
