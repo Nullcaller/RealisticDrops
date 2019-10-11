@@ -3,7 +3,8 @@
     "ingredients":
     [
         {
-            "item": "minecraft:gunpowder"
+            "type": "forge:ore_dict",
+            "ore": "dustSulfur"
         },
 		{
             "item": "minecraft:sand",
