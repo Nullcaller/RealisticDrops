@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "minecraft:ender_pearl"
+        },
+		{
+            "item": "minecraft:stone",
+            "data": 32767
+        }
+    ],
+    "result":
+    {
+        "item": "minecraft:end_stone",
+        "count": 1
+    }
+}
