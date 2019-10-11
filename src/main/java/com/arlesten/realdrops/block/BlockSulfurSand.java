@@ -24,7 +24,7 @@ public class BlockSulfurSand extends Block {
 		setCreativeTab(TabRealDrops.instance);
 		setSoundType(SoundType.SAND);
 		setHardness(0.75F);
-		setResistance(0.75F);
+		setHarvestLevel("shovel", 0, this.getDefaultState());
 	}
 
     @Override
