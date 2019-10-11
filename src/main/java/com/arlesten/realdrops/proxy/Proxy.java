@@ -3,6 +3,7 @@ package com.arlesten.realdrops.proxy;
 import com.arlesten.realdrops.block.BlockSilverOre;
 import com.arlesten.realdrops.item.ItemRodBlazeUnfired;
 import com.arlesten.realdrops.item.ItemSilverIngot;
+import com.arlesten.realdrops.world.MineableGenerator;
 
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -17,6 +18,8 @@ public class Proxy {
 		GameRegistry.addSmelting(ItemRodBlazeUnfired.instance, new ItemStack(Items.BLAZE_ROD, 1), 1F);
 		GameRegistry.addSmelting(Items.GUNPOWDER, new ItemStack(Items.GLOWSTONE_DUST, 1), 0.1F);
 		GameRegistry.addSmelting(BlockSilverOre.itemBlock, new ItemStack(ItemSilverIngot.instance, 1), 0.1F);
+		
+		GameRegistry.registerWorldGenerator(MineableGenerator.instance, 0);
 	}
 
 	public void init(FMLInitializationEvent event) {
