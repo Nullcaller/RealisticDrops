@@ -2,6 +2,7 @@ package com.arlesten.realdrops.world;
 
 import java.util.Random;
 
+import com.arlesten.realdrops.RealDrops;
 import com.arlesten.realdrops.block.BlockSaltpeterOre;
 import com.arlesten.realdrops.block.BlockSilverOre;
 import com.arlesten.realdrops.block.BlockSulfurSand;
@@ -29,9 +30,45 @@ public class MineableGenerator implements IWorldGenerator {
 				break;
 			// Overworld
 			case 0:
-				runGenerator(BlockSaltpeterOre.instance.getDefaultState(), 8, 10, 30, 70, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
-				runGenerator(BlockSilverOre.instance.getDefaultState(), 4, 6, 10, 40, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
-				runGenerator(BlockSulfurSand.instance.getDefaultState(), 16, 2, 40, 256, BlockMatcher.forBlock(Blocks.SAND), world, random, chunkX, chunkZ);
+				if(RealDrops.configGeneration.saltpeter.enable)
+					runGenerator(
+						BlockSaltpeterOre.instance.getDefaultState(),
+						RealDrops.configGeneration.saltpeter.blockAmount,
+						RealDrops.configGeneration.saltpeter.chancesToSpawn,
+						RealDrops.configGeneration.saltpeter.minHeight,
+						RealDrops.configGeneration.saltpeter.maxHeight,
+						BlockMatcher.forBlock(Blocks.STONE),
+						world,
+						random,
+						chunkX,
+						chunkZ
+					);
+				if(RealDrops.configGeneration.silver.enable)
+					runGenerator(
+						BlockSilverOre.instance.getDefaultState(),
+						RealDrops.configGeneration.silver.blockAmount,
+						RealDrops.configGeneration.silver.chancesToSpawn,
+						RealDrops.configGeneration.silver.minHeight,
+						RealDrops.configGeneration.silver.maxHeight,
+						BlockMatcher.forBlock(Blocks.STONE),
+						world,
+						random,
+						chunkX,
+						chunkZ
+					);
+				if(RealDrops.configGeneration.sulfur.enable)
+					runGenerator(
+						BlockSulfurSand.instance.getDefaultState(),
+						RealDrops.configGeneration.sulfur.blockAmount,
+						RealDrops.configGeneration.sulfur.chancesToSpawn,
+						RealDrops.configGeneration.sulfur.minHeight,
+						RealDrops.configGeneration.sulfur.maxHeight,
+						BlockMatcher.forBlock(Blocks.SAND),
+						world,
+						random,
+						chunkX,
+						chunkZ
+					);
 				break;
 			// End
 			case 1:
