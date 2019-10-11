@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "minecraft:blaze_powder"
+        },
+		{
+            "type": "forge:ore_dict",
+            "ore": "nuggetSilver"
+        }
+    ],
+    "result":
+    {
+        "item": "minecraft:ghast_tear",
+        "count": 1
+    }
+}

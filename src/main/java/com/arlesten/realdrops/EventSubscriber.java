@@ -1,10 +1,14 @@
 package com.arlesten.realdrops;
 
 import com.arlesten.realdrops.block.BlockSaltpeterOre;
+import com.arlesten.realdrops.block.BlockSilver;
+import com.arlesten.realdrops.block.BlockSilverOre;
 import com.arlesten.realdrops.block.BlockSulfurSand;
 import com.arlesten.realdrops.item.ItemDustSaltpeter;
 import com.arlesten.realdrops.item.ItemDustSulfur;
 import com.arlesten.realdrops.item.ItemRodBlazeUnfired;
+import com.arlesten.realdrops.item.ItemSilverIngot;
+import com.arlesten.realdrops.item.ItemSilverNugget;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -13,7 +17,6 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent.Register;
@@ -46,8 +49,16 @@ public class EventSubscriber {
 		registry.register(ItemRodBlazeUnfired.instance);
 		OreDictionary.registerOre("rodBlazeUnfired", ItemRodBlazeUnfired.instance);
 		
+		registry.register(ItemSilverIngot.instance);
+		OreDictionary.registerOre("ingotSilver", ItemSilverIngot.instance);
+		
+		registry.register(ItemSilverNugget.instance);
+		OreDictionary.registerOre("nuggetSilver", ItemSilverNugget.instance);
+		
 		registry.register(BlockSaltpeterOre.itemBlock);
 		registry.register(BlockSulfurSand.itemBlock);
+		registry.register(BlockSilverOre.itemBlock);
+		registry.register(BlockSilver.itemBlock);
 	}
 	
 	@SubscribeEvent
@@ -60,6 +71,12 @@ public class EventSubscriber {
 		registry.register(BlockSulfurSand.instance);
 		OreDictionary.registerOre("oreSulfur", BlockSulfurSand.instance);
 		OreDictionary.registerOre("sandSulfur", BlockSulfurSand.instance);
+		
+		registry.register(BlockSilverOre.instance);
+		OreDictionary.registerOre("oreSilver", BlockSilverOre.instance);
+		
+		registry.register(BlockSilver.instance);
+		OreDictionary.registerOre("blockSilver", BlockSilver.instance);
 	}
 	
 	@SubscribeEvent
@@ -67,8 +84,13 @@ public class EventSubscriber {
 		registerModel(ItemRodBlazeUnfired.instance);
 		registerModel(ItemDustSulfur.instance);
 		registerModel(ItemDustSaltpeter.instance);
+		registerModel(ItemSilverIngot.instance);
+		registerModel(ItemSilverNugget.instance);
+		
 		registerModel(BlockSaltpeterOre.itemBlock);
 		registerModel(BlockSulfurSand.itemBlock);
+		registerModel(BlockSilverOre.itemBlock);
+		registerModel(BlockSilver.itemBlock);
 	}
 	
 	protected static void registerModel(Item item) {

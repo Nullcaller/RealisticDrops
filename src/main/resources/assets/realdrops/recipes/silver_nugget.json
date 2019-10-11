@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "item": "realdrops:silver_ingot"
+        }
+    ],
+    "result":
+    {
+        "item": "realdrops:silver_nugget",
+		"count": 9
+    }
+}
