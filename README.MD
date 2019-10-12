@@ -11,6 +11,7 @@ So, what does this mod, then?
 	* [Saltpeter Ore](https://github.com/Nullcaller/RealisticDrops/wiki/Saltpeter)
 	* [Quartz Ore](https://github.com/Nullcaller/RealisticDrops/wiki/Nether-Resources#user-content-nether-quartz)
 	* [Sulfur Sands](https://github.com/Nullcaller/RealisticDrops/wiki/Sulfur)
+	* [Ardite and Cobalt Ore](https://github.com/Nullcaller/RealisticDrops/wiki/Tinkers'-Construct-Compat)
 * [Nether](https://github.com/Nullcaller/RealisticDrops/wiki/Nether-Resources) and [end resources](https://github.com/Nullcaller/RealisticDrops/wiki/End-Resources) are obtainable via crafting!
 * Actually, a lot more resources are obtainable via crafting!
 	* [Blaze Rods](https://github.com/Nullcaller/RealisticDrops/wiki/Blaze-Rods)
