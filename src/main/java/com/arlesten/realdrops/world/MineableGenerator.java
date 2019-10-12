@@ -3,6 +3,8 @@ package com.arlesten.realdrops.world;
 import java.util.Random;
 
 import com.arlesten.realdrops.RealDrops;
+import com.arlesten.realdrops.block.BlockArditeOre;
+import com.arlesten.realdrops.block.BlockCobaltOre;
 import com.arlesten.realdrops.block.BlockQuartzOre;
 import com.arlesten.realdrops.block.BlockSaltpeterOre;
 import com.arlesten.realdrops.block.BlockSilverOre;
@@ -77,6 +79,32 @@ public class MineableGenerator implements IWorldGenerator {
 						RealDrops.configGeneration.quartz.chancesToSpawn,
 						RealDrops.configGeneration.quartz.minHeight,
 						RealDrops.configGeneration.quartz.maxHeight,
+						BlockMatcher.forBlock(Blocks.STONE),
+						world,
+						random,
+						chunkX,
+						chunkZ
+					);
+				if(RealDrops.configGeneration.cobalt.enable)
+					runGenerator(
+						BlockCobaltOre.instance.getDefaultState(),
+						RealDrops.configGeneration.cobalt.blockAmount,
+						RealDrops.configGeneration.cobalt.chancesToSpawn,
+						RealDrops.configGeneration.cobalt.minHeight,
+						RealDrops.configGeneration.cobalt.maxHeight,
+						BlockMatcher.forBlock(Blocks.STONE),
+						world,
+						random,
+						chunkX,
+						chunkZ
+					);
+				if(RealDrops.configGeneration.ardite.enable)
+					runGenerator(
+						BlockArditeOre.instance.getDefaultState(),
+						RealDrops.configGeneration.ardite.blockAmount,
+						RealDrops.configGeneration.ardite.chancesToSpawn,
+						RealDrops.configGeneration.ardite.minHeight,
+						RealDrops.configGeneration.ardite.maxHeight,
 						BlockMatcher.forBlock(Blocks.STONE),
 						world,
 						random,

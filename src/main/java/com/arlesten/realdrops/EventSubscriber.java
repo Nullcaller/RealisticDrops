@@ -1,5 +1,7 @@
 package com.arlesten.realdrops;
 
+import com.arlesten.realdrops.block.BlockArditeOre;
+import com.arlesten.realdrops.block.BlockCobaltOre;
 import com.arlesten.realdrops.block.BlockQuartzOre;
 import com.arlesten.realdrops.block.BlockSaltpeterOre;
 import com.arlesten.realdrops.block.BlockSilver;
@@ -72,6 +74,12 @@ public class EventSubscriber {
 		registry.register(BlockQuartzOre.itemBlock);
 		OreDictionary.registerOre("oreQuartz", BlockQuartzOre.itemBlock);
 		OreDictionary.registerOre("oreNetherQuartz", BlockQuartzOre.itemBlock);
+		
+		registry.register(BlockCobaltOre.itemBlock);
+		OreDictionary.registerOre("oreCobalt", BlockCobaltOre.itemBlock);
+
+		registry.register(BlockArditeOre.itemBlock);
+		OreDictionary.registerOre("oreArdite", BlockArditeOre.itemBlock);
 	}
 	
 	@SubscribeEvent
@@ -87,6 +95,10 @@ public class EventSubscriber {
 		registry.register(BlockSilver.instance);
 		
 		registry.register(BlockQuartzOre.instance);
+		
+		registry.register(BlockCobaltOre.instance);
+		
+		registry.register(BlockArditeOre.instance);
 	}
 	
 	@SubscribeEvent
@@ -102,6 +114,8 @@ public class EventSubscriber {
 		registerModel(BlockSilverOre.itemBlock);
 		registerModel(BlockSilver.itemBlock);
 		registerModel(BlockQuartzOre.itemBlock);
+		registerModel(BlockCobaltOre.itemBlock);
+		registerModel(BlockArditeOre.itemBlock);
 	}
 	
 	protected static void registerModel(Item item) {
