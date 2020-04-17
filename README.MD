@@ -4,7 +4,7 @@ The goal of this mod is to provide a way to obtain mob drops and some other reso
 
 Also, I wanted this mod to be as lightweight and as vanilla-like as it can be. I could have added a grinder, a way to generate quartz (like AA's atomic reconstructor) from netherrack, and much more stuff like that. But it would be worse than just using crafting, smelting and Forge modloader events.
 
-So, what does this mod, then?
+So, what this mod does, then?
 
 * New ore generation!
 	* [Silver Ore](https://github.com/Nullcaller/RealisticDrops/wiki/Silver)
