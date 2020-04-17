@@ -25,7 +25,8 @@ So, what does this mod, then?
 	* [Rotten Flesh](https://github.com/Nullcaller/RealisticDrops/wiki/Rotten-Flesh)
 	* [Gunpowder](https://github.com/Nullcaller/RealisticDrops/wiki/Gunpowder)
 * Skulls & bones [drop from every mob](https://github.com/Nullcaller/RealisticDrops/wiki/Skulls-&-Bones)!
-* [And mob heads too](https://github.com/Nullcaller/RealisticDrops/wiki/Mob-Heads)!
+	* {NEW} Now you can make ANY item drop from every mob!
+* [Mob heads're craftable](https://github.com/Nullcaller/RealisticDrops/wiki/Mob-Heads)!
 
 By the way, if you don't like some or all of the crafting recipes, you can change them. Open up mod's jar file and edit the [recipe json files](https://minecraft.gamepedia.com/Recipe#JSON_format) in _assets/realdrops/recipes_.
 
