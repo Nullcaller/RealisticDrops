@@ -28,6 +28,31 @@ public class RealDrops {
 	@EventHandler public void init(FMLInitializationEvent event) { proxy.init(event); }
 	@EventHandler public void postInit(FMLPostInitializationEvent event) { proxy.postInit(event); }
 	
+	@Config(modid = RealDrops.ID, category = "drops")
+	public static class configDrops {
+		public static _bonelike bonelike = new _bonelike();
+		public static _skulllike skulllike = new _skulllike();
+		
+		public static class _bonelike {
+			@Name("One per HP")
+			public float perhp = 5;
+			
+			@Name("Drop IDs")
+			public String[] ids = { "minecraft:bone" };
+		}
+		
+		public static class _skulllike {
+			@Name("Chance per HP")
+			public float perhp = 0.04F;
+			
+			@Name("Chance per looting level")
+			public float perll = 0.05F;
+			
+			@Name("Drop IDs")
+			public String[] ids = { "minecraft:skull" };
+		}
+	}
+	
 	@Config(modid = RealDrops.ID, category = "generation")
 	public static class configGeneration {
 		public static _silver silver = new _silver();

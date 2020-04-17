@@ -127,15 +127,18 @@ public class EventSubscriber {
     	if(event.getEntity() instanceof EntityLivingBase) {
     		EntityLivingBase entity = (EntityLivingBase) event.getEntity();
     		
-    		int boneAmount = (int) Math.floor((entity.getMaxHealth() / 5) * (1 + event.getLootingLevel()));
+    		int boneAmount = (int) Math.floor((entity.getMaxHealth() / RealDrops.configDrops.bonelike.perhp) * (1 + event.getLootingLevel()));
     		boneAmount = boneAmount > 0 ? boneAmount : 1;
-    		EntityItem bonesEntity = UtilItem.createEntityItem(entity.world, entity.getPosition(), new ItemStack(Items.BONE, boneAmount));
-    		event.getDrops().add(bonesEntity);
-    		
-    		if(Math.random() < (entity.getMaxHealth() * 4 / 100) + ((1 + event.getLootingLevel()) * 5 / 100)) {
-    			EntityItem skullEntity = UtilItem.createEntityItem(entity.world, entity.getPosition(), new ItemStack(Items.SKULL, 1));
-    			event.getDrops().add(skullEntity);
+    		for(String id : RealDrops.configDrops.bonelike.ids) {
+    			EntityItem bonesEntity = UtilItem.createEntityItem(entity.world, entity.getPosition(), new ItemStack(Item.getByNameOrId(id), boneAmount));
+    			event.getDrops().add(bonesEntity);
     		}
+    		
+    		if(Math.random() < (entity.getMaxHealth() * RealDrops.configDrops.skulllike.perhp) + ((1 + event.getLootingLevel()) * RealDrops.configDrops.skulllike.perll))
+    			for(String id : RealDrops.configDrops.skulllike.ids) {
+    				EntityItem skullEntity = UtilItem.createEntityItem(entity.world, entity.getPosition(), new ItemStack(Item.getByNameOrId(id), 1));
+    				event.getDrops().add(skullEntity);
+    			}
     	}
     }
 }
