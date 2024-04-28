@@ -1,5 +1,7 @@
 # Realistic Drops
 
+**WARNING!** This mod is no longer maintained. It has only been released for Minecraft 1.12.2 and will not be released for any other version of Minecraft but 1.12.2 in the form that it is currently in. If you want to have a go at porting it to a higher version, feel free to do so. I will not promise that I will not revisit this mod idea in the future. However, I will not promise the opposite either. Have a nice day, sincerely yours, Gleb Salmanov a.k.a Nullcaller
+
 The goal of this mod is to provide a way to obtain mob drops and some other resources via crafting or smelting, using the resources obtainable on peaceful difficulty in the Overworld.
 
 Also, I wanted this mod to be as lightweight and as vanilla-like as it can be. I could have added a grinder, a way to generate quartz (like AA's atomic reconstructor) from netherrack, and much more stuff like that. But it would be worse than just using crafting, smelting and Forge modloader events.
